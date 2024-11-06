@@ -9,7 +9,8 @@ export default class ErrorRepository {
             const description = getReasonPhrase(numericCode);
             this.errors.set(numericCode, description);
         } catch (error) {
-            
+         const newError = error;
+         console.log(newError)
                 }
     }
  }
